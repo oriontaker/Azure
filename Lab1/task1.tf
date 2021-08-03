@@ -40,7 +40,7 @@ resource "azurerm_network_interface" "nic" {
     public_ip_address_id = azurerm_public_ip.publicip.id
   }
 }
-#create VM
+#create Virtual machine
 resource "azurerm_windows_virtual_machine" "azurevm" {
   name                = "az104-07-vm0"
   resource_group_name = azurerm_resource_group.rg1.name
